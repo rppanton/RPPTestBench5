@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericSchedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<StepReference>
+      <ScriptFile>scan_mac.py</ScriptFile>
+      <Description>Read a QR code from the sticker</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>smoke_test.py</ScriptFile>
+      <Description>Power up board. Board smoke test</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>program_NRF.py</ScriptFile>
+      <Description>Program NRF51 chip</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>program_SAMD.py</ScriptFile>
+      <Description>Program board test firmware</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>v6_pre_test.py</ScriptFile>
+      <Description>Write/Verify board main parameters</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>v6_xt_trim.py</ScriptFile>
+      <Description>Decawave RF oscillator trim</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>v6_per_test.py</ScriptFile>
+      <Description>Packet Error Rate Test</Description>
+    </StepReference>
+	<!-- <StepReference> -->
+      <!-- <ScriptFile>v6_bt_test.py</ScriptFile> -->
+      <!-- <Description>Test Bluetooth module</Description> -->
+    <!-- </StepReference> -->
+	<StepReference>
+      <ScriptFile>v6_post_test.py</ScriptFile>
+      <Description>Board post-test. Read entries for DB</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>program_SAMD.py</ScriptFile>
+      <Description>Program board release firmware</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>finalize.py</ScriptFile>
+      <Description>Update database record fields</Description>
+    </StepReference>
+</GenericSchedule>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericSchedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<StepReference>
+      <ScriptFile>scan_mac.py</ScriptFile>
+      <Description>Read a QR code from the sticker</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>smoke_test.py</ScriptFile>
+      <Description>Power up board. Board smoke test</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>load_image.py</ScriptFile>
+      <Description>Program board test firmware</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>verify_pref.py</ScriptFile>
+      <Description>Read/Verify preferals</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>read_volts.py</ScriptFile>
+      <Description>Read/Verify output voltages</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>bt_test.py</ScriptFile>
+      <Description>Test Bluetooth module</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>collect_pars.py</ScriptFile>
+      <Description>Read parameters for DB record</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>load_image.py</ScriptFile>
+      <Description>Program board release firmware</Description>
+    </StepReference>
+	<StepReference>
+      <ScriptFile>finalize.py</ScriptFile>
+      <Description>Update database record fields</Description>
+    </StepReference>
+</GenericSchedule>

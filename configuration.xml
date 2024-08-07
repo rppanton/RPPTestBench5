@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<port_pps>COM6</port_pps>
+<port_sa>COM4</port_sa>
+<port_uut>COM7</port_uut>
+<batch_name>V8B-0721</batch_name>
+<schedule>RPP-MOD-V8B</schedule>
+<noise_level>-45</noise_level>
+<sn_jl_uut>260100541</sn_jl_uut>
+<sn_jl_gn>801006104</sn_jl_gn>
+<rds_host></rds_host>
+<socket></socket>
+<username></username>
+<password></password>
+<db_name></db_name>
+</root>
